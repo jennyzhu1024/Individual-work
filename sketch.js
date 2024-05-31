@@ -386,12 +386,15 @@ class myPattern {
     // (x,y) coordinate and myPattern's width and height and color
     this.x = x + width / 2;
     this.y = y + height / 2;
+    // originalWidth, originalHeight and originalColor are used to recover to original style
     this.originalWidth = width;
     this.originalHeight = height;
     this.color = color;
     this.originalColor = color;
+    // hovered is a flag to control the style start change
     this.hovered = false;
     this.isParent = isParent;
+  
   }
 
   show() {
